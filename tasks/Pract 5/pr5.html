@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weekly Planner</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="planner">
+    <header>
+      <h1 contenteditable="true">WEEKLY PLAN</h1>
+      <div class="header-details">
+        <div class="week-of">
+          WEEK OF: <input type="date" />
+        </div>
+        <div class="healthy-habit">
+          HEALTHY HABIT: <input type="text" placeholder="E.g., Drink more water" />
+        </div>
+        <div class="checkboxes">
+          <label><input type="checkbox"> ROCKED IT</label>
+          <br>
+          <label><input type="checkbox"> ROOM FOR IMPROVEMENT</label>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="left-section">
+        <h2>TOP 3 GOALS</h2>
+        <ul class="goals">
+          <li><input type="checkbox"> <input type="text" placeholder="E.g., Finish project X" /></li>
+          <li><input type="checkbox"> <input type="text" placeholder="E.g., Exercise 3 times" /></li>
+          <li><input type="checkbox"> <input type="text" placeholder="E.g., Read 1 book" /></li>
+        </ul>
+        <h2>TO DO</h2>
+        <ul class="tasks">
+          <li><input type="checkbox"> <input type="text" placeholder="E.g., Call mom" /></li>
+          <li><input type="checkbox"> <input type="text" placeholder="E.g., Grocery shopping" /></li>
+          <li><input type="checkbox"> <input type="text" placeholder="E.g., Prepare meeting notes" /></li>
+          <li><input type="checkbox"> <input type="text" placeholder="E.g., Pay bills" /></li>
+          <li><input type="checkbox"> <input type="text" placeholder="E.g., Clean desk" /></li>
+        </ul>
+        <h2>NEXT WEEK</h2>
+        <ul class="next-week">
+          <li><input type="checkbox"> <input type="text" placeholder="E.g., Plan next week" /></li>
+          <li><input type="checkbox"> <input type="text" placeholder="E.g., Schedule doctor appointment" /></li>
+        </ul>
+      </div>
+      <div class="right-section">
+        <div class="day">
+          <h2>MONDAY</h2>
+          <textarea placeholder="E.g., Morning: Gym; Afternoon: Meeting with team"></textarea>
+        </div>
+        <div class="day">
+          <h2>TUESDAY</h2>
+          <textarea placeholder="E.g., Prepare presentation"></textarea>
+        </div>
+        <div class="day">
+          <h2>WEDNESDAY</h2>
+          <textarea placeholder="E.g., Weekly review session"></textarea>
+        </div>
+        <div class="day">
+          <h2>THURSDAY</h2>
+          <textarea placeholder="E.g., Client meeting at 3 PM"></textarea>
+        </div>
+        <div class="day">
+          <h2>FRIDAY</h2>
+          <textarea placeholder="E.g., Finalize project report"></textarea>
+        </div>
+        <div class="day">
+          <h2>SATURDAY</h2>
+          <textarea placeholder="E.g., Family dinner"></textarea>
+        </div>
+        <div class="day">
+          <h2>SUNDAY</h2>
+          <textarea placeholder="E.g., Relax and read a book"></textarea>
+        </div>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

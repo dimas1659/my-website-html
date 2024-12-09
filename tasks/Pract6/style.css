@@ -1,0 +1,56 @@
+body {
+    background-color: #f0f8ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+.container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 100%;
+    background: url('https://img.wallscloud.net/uploads/thumb/954962676/8bit-8bit-grafika-les-retro-fon-pikseli-pxl-1024x576-MM-80.webp') no-repeat center center;
+    background-size: cover;
+    animation: moveBackground 8s infinite linear;
+}
+.pokemon {
+    transform: scaleX(-1);
+    position: absolute;
+    bottom: 10%;
+    left: -150px;
+    width: 300px;
+    height: 1020px;
+    background: url('https://img.pokemondb.net/sprites/black-white/anim/normal/beautifly.gif') no-repeat center;
+    background-size: contain;
+    animation: movePokemon 9s infinite linear;
+}
+@keyframes moveBackground {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+@keyframes movePokemon {
+    0% {
+        left: -150px;
+    }
+    50% {
+        left: 50%;
+        transform: translateX(-50%) rotate(15deg);
+    }
+    100% {
+        left: 100%;
+        transform: translateX(-50%) rotate(-15deg);
+    }
+}

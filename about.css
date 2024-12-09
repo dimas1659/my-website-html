@@ -1,0 +1,122 @@
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f8ff; 
+    color: #333; 
+    line-height: 1.8;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #34495e;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 2px solid #1abc9c; 
+}
+
+header h2 {
+    margin: 0;
+    color: #ffffff; 
+    font-size: 32px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    padding: 15px 0;
+    background-color: #34495e;
+    border-bottom: 2px solid #1abc9c;
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.nav-links li a:hover {
+    color: #1abc9c; 
+    text-shadow: 0 0 5px #1abc9c; 
+}
+
+hr {
+    border: none;
+    border-top: 2px solid #1abc9c;
+    margin: 20px 0;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 20px;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.about-section {
+    background-color: #ffffff;
+    padding: 25px;
+    border: 1px solid #1abc9c;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    text-align: justify;
+}
+
+.about-section .me img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto 15px;
+    border-radius: 10px;
+    border: 2px solid #1abc9c; 
+}
+
+.about-section .p1 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #555; 
+
+footer {
+    background-color: #34495e;
+    text-align: center;
+    padding: 15px 0;
+    border-top: 2px solid #1abc9c;
+    color: #ffffff; 
+    font-size: 14px;
+}
+
+footer .social-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+footer .social-links img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid #1abc9c;
+    transition: transform 0.3s ease, filter 0.3s ease;
+    padding: 5px;
+}
+
+footer .social-links img:hover {
+    transform: scale(1.2); /* Збільшення при наведенні */
+    filter: brightness(1.3);
+}

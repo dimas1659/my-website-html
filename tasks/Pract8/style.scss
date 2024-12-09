@@ -1,0 +1,90 @@
+$primary-color: #fb8c00;
+$secondary-color: #e65100;
+$background-color: #fff3e0;
+$button-hover-color: #e65100;
+$font-family: 'Roboto', sans-serif;
+$border-radius: 10px;
+$box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+
+@mixin box-shadow($x: 0, $y: 6px, $blur: 12px, $color: rgba(0, 0, 0, 0.15)) {
+    -webkit-box-shadow: $x $y $blur $color;
+    -moz-box-shadow: $x $y $blur $color;
+    box-shadow: $x $y $blur $color;
+}
+
+@mixin button-style($bg-color, $hover-color) {
+    padding: 15px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: $bg-color;
+    border: none;
+    border-radius: $border-radius;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    
+    &:hover {
+        background-color: $hover-color;
+    }
+    
+    &:active {
+        transform: scale(0.96);
+    }
+}
+
+body {
+    font-family: $font-family;
+    background-color: $background-color;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+.header {
+    margin-bottom: 30px;
+    
+    &__title {
+        font-size: 48px;
+        color: $secondary-color;
+    }
+    
+    &__subtitle {
+        font-size: 20px;
+        color: darken($secondary-color, 20%);
+    }
+}
+
+.intro {
+    max-width: 600px;
+    width: 100%;
+    
+    &__image-container {
+        margin-bottom: 20px;
+    }
+    
+    &__image {
+        width: 100%;
+        border-radius: $border-radius;
+        @include box-shadow;
+        transition: transform 0.3s ease;
+        
+        &:hover {
+            transform: scale(1.08);
+        }
+    }
+
+    &__description {
+        font-size: 18px;
+        color: $secondary-color;
+        margin-bottom: 20px;
+        line-height: 1.8;
+    }
+}
+
+.button {
+    @include button-style($primary-color, $button-hover-color);
+}

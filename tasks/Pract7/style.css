@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #001f3f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+.page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.header {
+    margin-bottom: 30px;
+}
+.header__title {
+    font-size: 48px;
+    font-weight: bold;
+    color: #00796b;
+    margin-bottom: 10px;
+}
+.header__subtitle {
+    font-size: 20px;
+    color: #004d40;
+}
+.intro {
+    text-align: center;
+}
+.intro__image-container {
+    margin: 0 auto 30px;
+    max-width: 350px;
+    overflow: hidden;
+}
+.intro__image {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+.intro__image:hover {
+    transform: scale(1.05);
+}
+.intro__description {
+    font-size: 18px;
+    color: #00796b;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+.button {
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    border: none;
+    border-radius: 30px;
+    background-color: #00796b;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.button--cta:hover {
+    background-color: #004d40;
+    transform: scale(1.05);
+}
+.button--cta:active {
+    transform: scale(1);
+}
